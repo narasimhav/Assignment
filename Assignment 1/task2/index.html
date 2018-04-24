@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="js/task2.js"></script>
+
+    <div ng-app="MyApp" ng-controller="MyController">
+        <div ng-repeat="fruit in Fruits">
+            <label for="chkCustomer">
+                <input id="chkCustomer" type="checkbox" ng-model="fruit.Selected" ng-change="GetValue()"/>
+                {{fruit.Name}}
+            </label>
+        </div>
+        <br />
+        <br />
+        <!-- <input type="button" value="Get" ng-click="GetValue()" /> -->
+    </div>
+
+</body>
+</html>
